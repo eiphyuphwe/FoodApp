@@ -54,4 +54,34 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    //Recyclerview
+    def recyclerViewVersion = '1.2.0-alpha06'
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+
+
+    /* Viewmodel */
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0"
+
+    // ViewModel and LiveData
+    def lifecycle_version = '2.1.0-alpha03'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    // Retrofit
+    def retrofitVersion = "2.5.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    //retrofit - rxjava converter
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+
+    //RxJava 2
+   /* implementation "io.reactivex.rxjava2:rxjava:2.2.18"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"*/
+    implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:2.2.0"
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
